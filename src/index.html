@@ -112,7 +112,9 @@
     <section class="about">
         <div class="container">
             <div class="about__block">
-                <div class="about__foto"></div>
+                <div class="about__foto">
+                    <img src="img/my-foto.jpg" alt="my-foto">
+                </div>
                 <div class="about__main">
                     <h2 class="about__title  title title_fz16">Про мене</h2>
                     <h1 class="about__subtitle  title_fz36 title">Мене звуть Олександр</h1>
@@ -466,7 +468,7 @@
         <div class="container">
             <div class="contacts__block">
                 <div class="contacts__foto">
-                    <img src="img/main_photo.jpg" alt="my-foto">
+                    <img src="img/my-foto.jpg" alt="my-foto">
                 </div>
                 <div class="contacts__content">
                     <h2 class="contacts__title  title title_fz16">
@@ -496,19 +498,23 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="btn contacts__btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
