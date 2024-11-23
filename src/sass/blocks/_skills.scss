@@ -35,6 +35,7 @@
         }
         &-title {
             position: relative;
+            padding-left: 13px;
             @include before_circle;
             &:before {
                 top: -7px;

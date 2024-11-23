@@ -4,10 +4,10 @@
         margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(2, 400px);
-        grid-template-rows: 46px;
-        grid-auto-rows: 46px;
+        grid-template-rows: repeat(3, minmax(46px, auto));
+        grid-auto-rows: minmax(46px, auto);
         row-gap: 15px;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     &__item {
         display: grid;
